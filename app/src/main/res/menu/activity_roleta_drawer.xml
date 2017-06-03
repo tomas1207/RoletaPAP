@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/Freinds"
+            android:icon="@drawable/freinds"
+        android:title="Freinds" />
+        <item
+            android:id="@+id/Roleta"
+            android:title="Roleta" />
+        <item
+            android:id="@+id/nav_slideshow"
+
+            android:title="Slideshow" />
+        <item
+            android:id="@+id/Tools"
+
+            android:title="Tools" />
+    </group>
+
+    <item android:title="Settings">
+        <menu>
+            <item
+                android:id="@+id/Settings"
+                android:icon="@drawable/settings"
+                android:title="General Settings" />
+
+        </menu>
+    </item>
+
+</menu>

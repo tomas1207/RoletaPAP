@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#373737"
+    >
+
+    <TextView
+        android:textColor="#fdd47c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rate us pls "
+        android:id="@+id/TV"
+        android:textSize="25dp"
+        />
+
+    <LinearLayout
+        android:background="#373737"
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="100">
+        <Button
+            style="?android:attr/buttonBarStyle"
+            android:textColor="#fdd47c"
+            android:layout_weight="33"
+            android:text="Rate us"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+        <Button
+            style="?android:attr/buttonBarStyle"
+            android:textColor="#fdd47c"
+            android:layout_weight="33"
+            android:text="Not now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+        <Button
+            style="?android:attr/buttonBarStyle"
+            android:textColor="#fdd47c"
+            android:text="Remind me later"
+            android:layout_weight="33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

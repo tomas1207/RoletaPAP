@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tomas1207portable.roletapap.CustomRoleta"
+   style="@style/Button_glodal" >
+
+ <TextView
+     android:layout_width="match_parent"
+     android:layout_height="match_parent" ></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Frist Game"
+        android:id="@+id/FristGameLBL"
+        style="@style/Button_glodal"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/FristGameTXT"
+        android:layout_below="@+id/FristGameLBL"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/FristGameTXT"
+        android:id="@+id/LBLWhite1"
+        android:background="#ffff"/>
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:text="Second Game"
+    android:id="@+id/SecondGameLBL"
+    android:layout_margin="5dp"
+    android:layout_below="@+id/LBLWhite1"
+    style="@style/Button_glodal"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/SecondGameTXT"
+        android:layout_below="@+id/SecondGameLBL"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/SecondGameTXT"
+        android:id="@+id/LBLWhite2"
+        android:background="#ffff"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Ter Game"
+        android:id="@+id/TerGameLBL"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/LBLWhite2"
+        style="@style/Button_glodal"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/TerGameTXT"
+        android:layout_below="@+id/TerGameLBL"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/LBLWhite3"
+        android:layout_below="@+id/TerGameTXT"
+        android:background="#ffff"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Quard Game"
+        android:id="@+id/QuarGameLBL"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/LBLWhite3"
+        style="@style/Button_glodal"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/QuarGameTXT"
+        android:layout_below="@+id/QuarGameLBL"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/LBLWhite4"
+        android:layout_below="@+id/QuarGameTXT"
+        android:background="#ffff"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/LBLWhite4"
+        style="@style/Button_glodal"
+        android:layout_margin="10dp"
+        android:id="@+id/SaveBNT"
+        android:text="Save"/>
+
+
+
+</RelativeLayout>

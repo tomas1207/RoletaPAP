@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "358665331942",
+    "firebase_url": "https://roleta-a7541.firebaseio.com",
+    "project_id": "roleta-a7541",
+    "storage_bucket": "roleta-a7541.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:358665331942:android:297477ea551bb0ee",
+        "android_client_info": {
+          "package_name": "com.example.tomas1207.roleta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "358665331942-ivuahanpfl806a9gm1b1ocjq2aaa8q65.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuJraJkk0z8YQJzwVjd11hWWNwfmTJaMk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:358665331942:android:4353d3bd3bd4cc3b",
+        "android_client_info": {
+          "package_name": "com.example.tomas1207portable.roletapap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "358665331942-ivuahanpfl806a9gm1b1ocjq2aaa8q65.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuJraJkk0z8YQJzwVjd11hWWNwfmTJaMk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

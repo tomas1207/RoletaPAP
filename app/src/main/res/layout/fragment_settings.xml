@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings"
+    android:id="@+id/Settingsfrag"
+    style="@style/Button_glodal">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_margin="16dp"
+        android:text="Facebook Login"
+        android:id="@+id/Facebook_Login"
+        style="@style/Button_glodal"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/Facebook_Login"
+        android:layout_margin="16dp"
+        android:text="Background"
+        style="@style/Button_glodal"
+        android:id="@+id/Background_change"
+        />
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    style="@style/Button_glodal"
+    android:layout_below="@+id/Background_change"
+    android:text="Customização"
+    android:id="@+id/Custam"/>
+
+
+</RelativeLayout>

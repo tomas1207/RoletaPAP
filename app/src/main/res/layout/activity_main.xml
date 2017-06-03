@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#373737"
+    tools:context="com.example.tomas1207portable.roletapap.Main">
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/UserTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="UserName"
+        android:textColor="#fdd47c"
+        android:textSize="50dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/Usertextlogin"
+        android:background="#FFF" />
+
+    <EditText
+        android:id="@+id/Usertextlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/UserTV"
+        android:layout_marginTop="12dp"
+        android:background="#373737"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:shadowColor="#373737"
+        android:singleLine="true"
+        android:textColor="#fdd47c"
+        android:textColorHighlight="#373737"
+        android:textColorHint="#373737"
+        android:textColorLink="#373737" />
+
+    <TextView
+        android:id="@+id/PasswordTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Usertextlogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="PassWord"
+        android:textColor="#fdd47c"
+        android:textSize="50dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/Passtextlogin"
+        android:background="#fff" />
+
+    <EditText
+        android:id="@+id/Passtextlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PasswordTV"
+        android:background="#373737"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:password="true"
+        android:singleLine="true"
+        android:textColor="#fdd47c" />
+
+    <Button
+        android:id="@+id/LoginBNT"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_below="@+id/Passtextlogin"
+        android:layout_marginTop="50dp"
+        android:background="#373737"
+        android:text="@string/Login"
+        android:textColor="#fdd47c"
+        android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/RegistoBNT"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_below="@+id/LoginBNT"
+        android:layout_marginTop="25dp"
+        android:background="#373737"
+        android:text="@string/Register"
+        android:textColor="#fdd47c"
+        android:textSize="50dp"/>
+</RelativeLayout>

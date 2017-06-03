@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_registo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#373737"
+    tools:context="com.example.tomas1207portable.roletapap.activities.Registo">
+
+    <TextView
+        android:id="@+id/LBLRegisto"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="Registo"
+        android:textAlignment="center"
+        android:textColor="#fdd47c"
+        android:textSize="50dp" />
+
+    <TextView
+        android:id="@+id/LBLUser"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/LBLRegisto"
+        android:layout_marginTop="25dp"
+        android:text="Username"
+        android:textAlignment="center"
+        android:textColor="#fdd47c"
+        android:textSize="50dp" />
+
+    <EditText
+        android:id="@+id/TXTuserregisto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LBLUser"
+        android:background="#373737"
+        android:textColor="#fdd47c" />
+
+    <ImageView
+        android:id="@+id/linhauser"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/TXTuserregisto"
+        android:background="#fff" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/linhauser"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:id="@+id/LBLpass"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/linhauser"
+        android:layout_marginTop="25dp"
+        android:text="Password"
+        android:textAlignment="center"
+        android:textColor="#fdd47c"
+        android:textSize="50dp" />
+
+    <EditText
+        android:id="@+id/TXTPassregisto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LBLpass"
+        android:background="#373737"
+        android:password="true"
+        android:textColor="#fdd47c" />
+
+    <ImageView
+        android:id="@+id/linhapass"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/TXTPassregisto"
+        android:background="#fff" />
+
+    <Button
+        android:id="@+id/BNTRegister"
+        style="@style/Button_glodal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/TXTPassregisto"
+        android:layout_marginTop="25dp"
+        android:text="Register" />
+
+    <TextView
+        android:id="@+id/Loginbacktxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BNTRegister"
+        android:clickable="true"
+        android:layout_marginTop="120dp"
+        style="@style/Button_glodal"
+        android:text="You have a login come back."
+        android:textSize="35dp" />
+
+
+</RelativeLayout>

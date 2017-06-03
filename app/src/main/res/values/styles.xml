@@ -1,0 +1,47 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#373737</item>
+        <item name="colorPrimaryDark">#373737</item>
+        <item name="colorAccent">#000</item>
+        <item name="android:actionOverflowButtonStyle">@style/MyActionBar</item>
+
+    </style>
+    <style name="MyActionBar"  parent="Widget.AppCompat.ActionButton.Overflow">
+    <item name="android:src">@drawable/freinds</item>
+    </style>
+
+
+
+    <style name="Button_Login" parent="Base.Widget.AppCompat.Button">
+        <item name="android:background">#373737</item>
+        <item name="android:textSize">50dp</item>
+        <item name="android:textColor">#fdd47c</item>
+        <item name="android:text">Login</item>
+    </style>
+
+    <style name="Button_Register" parent="Base.Widget.AppCompat.Button">
+        <item name="android:background">#373737</item>
+        <item name="android:textSize">50dp</item>
+        <item name="android:textColor">#fdd47c</item>
+        <item name="android:text">Register</item>
+    </style>
+
+    <style name="Button_glodal" parent="Base.Widget.AppCompat.Button">
+        <item name="android:background">#373737</item>
+        <item name="android:textSize">50dp</item>
+        <item name="android:textColor">#fdd47c</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>
