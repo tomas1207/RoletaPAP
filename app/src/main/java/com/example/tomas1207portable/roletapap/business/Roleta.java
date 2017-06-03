@@ -26,7 +26,7 @@ public class Roleta {
     }
 
     public Integer getDirection() {
-        return direction - 90;
+        return direction;
     }
 
     public String getWinningPlayer() {

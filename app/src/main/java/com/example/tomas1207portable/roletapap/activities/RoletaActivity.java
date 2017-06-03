@@ -37,7 +37,7 @@ public class RoletaActivity extends AppCompatActivity implements NavigationView.
     public static TextView TextLeft;
     public static TextView TextDown;
     public static TextView TextRight;
-
+private Roleta roleta;
     private ArrayList<String> players;
     private int lapCount;
     private ImageView pointer;
@@ -71,6 +71,7 @@ public class RoletaActivity extends AppCompatActivity implements NavigationView.
 
         this.pointer = (ImageView) this.findViewById(R.id.ImageArrow);
         this.lapCount = 4;
+        roleta = new Roleta(players);
 
         Toast.makeText(this, "Tudo em ordem", Toast.LENGTH_SHORT).show();
         TextLeft.setText(this.players.get(0));
@@ -81,11 +82,7 @@ public class RoletaActivity extends AppCompatActivity implements NavigationView.
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Roleta roleta = new Roleta(_this.players);
-                roleta.run();
-                _this.animate(roleta.getDirection());
-                _this.announceWinner(roleta);
-                DataBaseWrite(roleta);
+                _this.clickedStart();
             }
 
         });
@@ -125,11 +122,18 @@ public class RoletaActivity extends AppCompatActivity implements NavigationView.
         return true;
     }
 
+    private void clickedStart() {
+        reset();
+        roleta = new Roleta(players);
+        roleta.run();
+        animate(roleta.getDirection());
+        announceWinner(roleta);
+        DataBaseWrite(roleta);
+    }
+
     private void DataBaseWrite(Roleta roleta){
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference("message");
-        myRef.child("Jogo");
-
+        DatabaseReference myRef = database.getReference("Data");
         myRef.child("Jogo").setValue(roleta.getWinningPlayer());
     }
 
@@ -174,6 +178,10 @@ public class RoletaActivity extends AppCompatActivity implements NavigationView.
                 rotationBy(direction + this.lapCount * 360).
                 setInterpolator(new AccelerateDecelerateInterpolator()).
                 start();
+    }
+
+    private void reset() {
+        this.pointer.setRotation(0);
     }
 
     private void announceWinner(Roleta roleta) {

@@ -48,9 +48,7 @@ public class Main extends AppCompatActivity {
            sharedPreferences.getString("clear","0");
            sharedPreferences.getString("clearpass","0");
         if(cl.contentEquals("b") || cl2.contentEquals("0")){
-            Toast.makeText(this, "Algo esta errado no reino da patagonia", Toast.LENGTH_SHORT).show();
         }else{
-            Toast.makeText(this, "Tudo em ordem", Toast.LENGTH_SHORT).show();
             UserName.setText(cl);
             PassWord.setText(cl2);
         }
