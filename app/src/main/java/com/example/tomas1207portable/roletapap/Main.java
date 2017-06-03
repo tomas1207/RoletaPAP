@@ -29,9 +29,7 @@ public class Main extends AppCompatActivity {
     EditText UserName;
     EditText PassWord;
     SharedPreferences sharedPreferences;
-    String Uservar;
     String Passvar;
-    boolean isWifiConn;
     boolean mobileDataEnabled = false; // Assume disabled
     NetworkInfo networkInfo;
     ConnectivityManager cm;
@@ -39,12 +37,12 @@ public class Main extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-     sharedPreferences = getSharedPreferences("cenas",MODE_PRIVATE);
+        sharedPreferences = getSharedPreferences("cenas",MODE_PRIVATE);
         auth = FirebaseAuth.getInstance();
-      cm  = (ConnectivityManager) this.getSystemService(Context.CONNECTIVITY_SERVICE);
+        cm  = (ConnectivityManager) this.getSystemService(Context.CONNECTIVITY_SERVICE);
         UserName = (EditText) findViewById(R.id.Usertextlogin);
         PassWord = (EditText) findViewById(R.id.Passtextlogin);
-       networkInfo = cm.getNetworkInfo(ConnectivityManager.TYPE_WIFI);
+        networkInfo = cm.getNetworkInfo(ConnectivityManager.TYPE_WIFI);
             String cl = sharedPreferences.getString("clear","b");
             String cl2 = sharedPreferences.getString("clearpass","0");
            sharedPreferences.getString("clear","0");
