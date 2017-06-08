@@ -27,8 +27,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="80dp"
-            android:layout_marginStart="140dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="100dp"
             android:text=""
             android:rotation="270"
             android:id="@+id/TextLeft"
@@ -48,7 +48,7 @@
             android:layout_height="wrap_content"
             android:text=""
             android:id="@+id/TextDown"
-            android:layout_marginTop="56dp"
+            android:layout_marginTop="63dp"
             android:layout_below="@+id/TextLeft"
             android:layout_centerHorizontal="true" />
 
@@ -62,7 +62,7 @@
             android:layout_toRightOf="@+id/TextLeft"
             android:layout_toEndOf="@+id/TextLeft"
             android:layout_marginLeft="10dp"
-            android:layout_marginStart="100dp" />
+            android:layout_marginStart="170dp" />
 
 
         <ImageView

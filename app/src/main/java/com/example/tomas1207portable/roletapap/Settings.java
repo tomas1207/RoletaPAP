@@ -53,14 +53,7 @@ Button Facebook_Login;
                 Toast.makeText(getActivity(), "Face", Toast.LENGTH_SHORT).show();
             }
         });
-        Background_change = (Button) v.findViewById(R.id.Background_change);
-        Background_change.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getActivity(), "BackGround", Toast.LENGTH_SHORT).show();
-            }
-        });
-Custam = (Button) v.findViewById(R.id.Custam);
+        Custam = (Button) v.findViewById(R.id.Custam);
         Custam.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

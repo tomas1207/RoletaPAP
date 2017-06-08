@@ -24,6 +24,7 @@
             android:name=".activities.RoletaActivity"
             android:label="@string/title_activity_roleta"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activities.Facebook_Login"></activity>
     </application>
 
 </manifest>

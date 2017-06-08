@@ -15,25 +15,18 @@
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:layout_margin="16dp"
+        android:textSize="45dp"
         android:text="Facebook Login"
         android:id="@+id/Facebook_Login"
         style="@style/Button_glodal"
         />
-
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:layout_below="@+id/Facebook_Login"
-        android:layout_margin="16dp"
-        android:text="Background"
-        style="@style/Button_glodal"
-        android:id="@+id/Background_change"
-        />
-<Button
     android:layout_width="match_parent"
     android:layout_height="55dp"
+        android:layout_margin="25dp"
+        android:textSize="45dp"
     style="@style/Button_glodal"
-    android:layout_below="@+id/Background_change"
+    android:layout_below="@+id/Facebook_Login"
     android:text="Customização"
     android:id="@+id/Custam"/>
 

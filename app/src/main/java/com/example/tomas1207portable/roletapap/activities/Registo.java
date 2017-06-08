@@ -21,11 +21,11 @@ import com.google.firebase.auth.FirebaseAuth;
 
 
 public class Registo extends AppCompatActivity {
-Button Register;
+   private Button Register;
     private EditText UserEdit;
     private EditText PsssEdit;
     private  FirebaseAuth FirebaseAuth;
-
+private Button Face;
     SharedPreferences sharedPref ;
     SharedPreferences.Editor editor ;
 
@@ -45,7 +45,13 @@ Button Register;
         UserEdit = (EditText) findViewById(R.id.TXTuserregisto);
         PsssEdit = (EditText) findViewById(R.id.TXTPassregisto);
         Register = (Button) findViewById(R.id.BNTRegister);
-
+Face = (Button)findViewById(R.id.facebtnlogin);
+        Face.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Registo.this, Facebook_Login.class));
+            }
+        });
         //region Butao registo
         //Inicio do butao
         Register.setOnClickListener(new View.OnClickListener() {

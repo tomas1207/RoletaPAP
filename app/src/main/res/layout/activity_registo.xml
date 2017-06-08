@@ -83,6 +83,19 @@
         android:layout_below="@+id/TXTPassregisto"
         android:layout_marginTop="25dp"
         android:text="Register" />
+    <Button
+        android:layout_width="5000dp"
+        android:layout_height="55dp"
+        android:textSize="45dp"
+        style="@style/Button_glodal"
+        android:layout_below="@id/TXTPassregisto"
+        android:text="Facebook"
+        android:id="@+id/facebtnlogin"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="90dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginBottom="90dp"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:id="@+id/Loginbacktxt"
