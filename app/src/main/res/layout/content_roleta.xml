@@ -27,9 +27,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="40dp"
-            android:layout_marginStart="100dp"
-            android:text=""
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="50dp"
+            android:text="Player 4"
             android:rotation="270"
             android:id="@+id/TextLeft"
             />
@@ -37,7 +37,7 @@
         <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text=""
+    android:text="Player 1"
             android:id="@+id/Textup"
             android:layout_above="@+id/TextLeft"
             android:layout_centerHorizontal="true"
@@ -46,23 +46,23 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=""
+            android:text="Player 3"
             android:id="@+id/TextDown"
-            android:layout_marginTop="63dp"
+            android:layout_marginTop="70dp"
             android:layout_below="@+id/TextLeft"
             android:layout_centerHorizontal="true" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=""
+            android:text="Player4"
             android:rotation="90"
             android:id="@+id/TextRight"
             android:layout_centerVertical="true"
             android:layout_toRightOf="@+id/TextLeft"
             android:layout_toEndOf="@+id/TextLeft"
-            android:layout_marginLeft="10dp"
-            android:layout_marginStart="170dp" />
+            android:layout_marginLeft="100dp"
+            android:layout_marginStart="230dp" />
 
 
         <ImageView
@@ -99,6 +99,7 @@
             android:layout_height="50dp"
             android:background="@drawable/center"
             android:rotation="0"
+            android:id="@+id/Center_click"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true" />
     </RelativeLayout>

@@ -49,7 +49,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="55dp"
-        android:text="Ter Game"
+        android:text="Third Game"
         android:id="@+id/TerGameLBL"
         android:layout_margin="5dp"
         android:layout_below="@+id/LBLWhite2"
@@ -69,7 +69,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="55dp"
-        android:text="Quard Game"
+        android:text="Fourth Game"
         android:id="@+id/QuarGameLBL"
         android:layout_margin="5dp"
         android:layout_below="@+id/LBLWhite3"

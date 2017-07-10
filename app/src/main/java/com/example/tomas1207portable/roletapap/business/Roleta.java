@@ -1,6 +1,7 @@
 package com.example.tomas1207portable.roletapap.business;
 
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.Random;
 
 /**
@@ -11,6 +12,8 @@ import java.util.Random;
  */
 public class Roleta {
     private Integer direction;
+    private Integer DefDirection;
+    private Integer Lapscount;
     private String winningPlayer;
     private ArrayList<String> players;
 
@@ -28,18 +31,35 @@ public class Roleta {
     public Integer getDirection() {
         return direction;
     }
-
     public String getWinningPlayer() {
         return winningPlayer;
     }
-
     public ArrayList<String> getPlayers() {
         return players;
     }
+    public Integer getLapscount() {
+        return Lapscount;
+    }
+    public void setLapscount(Integer lapscount) {
+        Lapscount = lapscount;
+    }
 
     private void rotate() {
-        this.direction = new Random().nextInt(360);
+        DefDirection = new Random().nextInt(4);
+        if (DefDirection == 0){
+            direction = 0;
+        }
+        if (DefDirection == 1){
+            direction = 90;
+        }
+        if (DefDirection == 2){
+            direction = 180;
+        }
+        if (DefDirection == 3){
+            direction = 270;
+        }
     }
+
 
     private void findWinner() {
         float i = (float) getDirection() / 360 * getPlayers().size();

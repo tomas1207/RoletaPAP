@@ -45,13 +45,6 @@ private Button Face;
         UserEdit = (EditText) findViewById(R.id.TXTuserregisto);
         PsssEdit = (EditText) findViewById(R.id.TXTPassregisto);
         Register = (Button) findViewById(R.id.BNTRegister);
-Face = (Button)findViewById(R.id.facebtnlogin);
-        Face.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(Registo.this, Facebook_Login.class));
-            }
-        });
         //region Butao registo
         //Inicio do butao
         Register.setOnClickListener(new View.OnClickListener() {

@@ -27,6 +27,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
+import java.util.InputMismatchException;
+import java.util.Random;
 
 public class RoletaActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener,
         Settings.OnFragmentInteractionListener,
@@ -37,9 +39,11 @@ public class RoletaActivity extends AppCompatActivity implements NavigationView.
     public static TextView TextLeft;
     public static TextView TextDown;
     public static TextView TextRight;
+    private ImageView Center_cicked;
+
 private Roleta roleta;
     private ArrayList<String> players;
-    private int lapCount;
+    private int lapCount = 4;
     private ImageView pointer;
 
     @Override
@@ -59,8 +63,9 @@ private Roleta roleta;
         TextRight = (TextView)findViewById(R.id.TextRight);
         TextLeft = (TextView)findViewById(R.id.TextLeft);
         TextDown = (TextView)findViewById(R.id.TextDown);
+        Center_cicked = (ImageView) findViewById(R.id.Center_click);
 
-        final FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+
         sharedPreferences = getSharedPreferences("cenas",MODE_PRIVATE);
 
         this.players = new ArrayList();
@@ -70,21 +75,19 @@ private Roleta roleta;
         this.players.add(sharedPreferences.getString("text4", "Player 4"));
 
         this.pointer = (ImageView) this.findViewById(R.id.ImageArrow);
-        this.lapCount = 4;
+
         roleta = new Roleta(players);
 
         Toast.makeText(this, "Tudo em ordem", Toast.LENGTH_SHORT).show();
-        TextLeft.setText(this.players.get(0));
+        TextLeft.setText(this.players.get(3));
         TextRight.setText(this.players.get(1));
         TextDown.setText(this.players.get(2));
-        TextUp.setText(this.players.get(3));
-
-        fab.setOnClickListener(new View.OnClickListener() {
+        TextUp.setText(this.players.get(0));
+        Center_cicked.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                _this.clickedStart();
+            public void onClick(View v) {
+                clickedStart();
             }
-
         });
 
         final DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -123,8 +126,10 @@ private Roleta roleta;
     }
 
     private void clickedStart() {
+        int random = new Random().nextInt(10);
         reset();
         roleta = new Roleta(players);
+        roleta.setLapscount(random);
         roleta.run();
         animate(roleta.getDirection());
         announceWinner(roleta);
@@ -159,12 +164,17 @@ private Roleta roleta;
         int id = item.getItemId();
 
         if (id == R.id.Roleta) {
-            new Intent(this, RoletaActivity.class);
+
+           this.startActivity(new Intent(RoletaActivity.this,RoletaActivity.class));
         }
         else if (id == R.id.Settings) {
             Settings fr = new Settings();
             FragmentManager fragmentManager = getSupportFragmentManager();
             fragmentManager.beginTransaction().add(R.id.frag,fr).commit();
+        }
+        else if (id == R.id.FreindsMenu){
+          Intent intent =  new Intent(RoletaActivity.this, Friends.class);
+            this.startActivity(intent);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -175,7 +185,7 @@ private Roleta roleta;
     private void animate(Integer direction) {
         this.pointer.animate().
                 setDuration(3000).
-                rotationBy(direction + this.lapCount * 360).
+                rotationBy(direction + roleta.getLapscount() * 360).
                 setInterpolator(new AccelerateDecelerateInterpolator()).
                 start();
     }
